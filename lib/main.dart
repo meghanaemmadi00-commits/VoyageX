@@ -30,14 +30,17 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'VoyageX',
-          style: TextStyle(fontWeight: FontWeight.bold),
-        ),
-        backgroundColor: Colors.blue,
-        foregroundColor: Colors.white,
-        centerTitle: true,
-      ),
+  title: const Text(
+    'VoyageX',
+    style: TextStyle(
+      fontSize: 25,
+      fontWeight: FontWeight.bold,
+    ),
+  ),
+  backgroundColor: Colors.blue,
+  foregroundColor: Colors.white,
+  centerTitle: true,
+),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),
         child: Column(
