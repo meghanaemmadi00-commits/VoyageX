@@ -1,17 +1,39 @@
-# voyagex
+# VoyageX – Smart Travel Booking App
 
-A new Flutter project.
+## About the Project
 
-## Getting Started
+VoyageX is a Flutter-based travel booking application designed to make journey planning simple, convenient, and user-friendly. Users can enter their source, destination, and travel date to explore available travel options.
 
-This project is a starting point for a Flutter application.
+## Objectives
 
-A few resources to get you started if this is your first Flutter project:
+* Provide a simple and user-friendly interface.
+* Allow users to search for journeys.
+* Display available travel options and prices.
+* Collect passenger details for booking.
+* Display ticket confirmation after booking.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Main Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Home Screen** – Enter source, destination, and travel date.
+2. **Search Results** – View available bus, train, or flight options.
+3. **Booking Screen** – Enter passenger details and select seats.
+4. **Ticket Confirmation** – View booking and journey details.
+
+## Technologies Used
+
+* Flutter
+* Dart
+* Visual Studio Code
+* Git and GitHub
+
+## Project Scope
+
+VoyageX focuses on travel transportation booking. Hotel booking is not included in this project.
+
+## Project Status
+
+Currently under development.
+
+## Developer
+
+Meghana Emmadi
