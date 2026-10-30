@@ -23,20 +23,21 @@ class VoyageXApp extends StatelessWidget {
   }
 }
 
-class HomeScreen extends StatelessWidget {
+final TextEditingController dateController =
+    TextEditingController();
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
   @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  final TextEditingController dateController =
+      TextEditingController();
+
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-  title: const Text(
-    'VoyageX',
-    style: TextStyle(
-      fontSize: 25,
-      fontWeight: FontWeight.bold,
-    ),
-  ),
   backgroundColor: Colors.blue,
   foregroundColor: Colors.white,
   centerTitle: true,
@@ -73,15 +74,29 @@ class HomeScreen extends StatelessWidget {
                 border: OutlineInputBorder(),
               ),
             ),
-            const SizedBox(height: 16),
-            const TextField(
-              decoration: InputDecoration(
-                labelText: 'Travel Date',
-                hintText: 'DD/MM/YYYY',
-                prefixIcon: Icon(Icons.calendar_month),
-                border: OutlineInputBorder(),
-              ),
-            ),
+            TextField(
+  readOnly: true,
+  controller: dateController,
+  decoration: const InputDecoration(
+    labelText: 'Travel Date',
+    hintText: 'Select your travel date',
+    prefixIcon: Icon(Icons.calendar_month),
+    border: OutlineInputBorder(),
+  ),
+  onTap: () async {
+    DateTime? pickedDate = await showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime.now(),
+      lastDate: DateTime(2028),
+    );
+
+    if (pickedDate != null) {
+      dateController.text =
+          "${pickedDate.day}/${pickedDate.month}/${pickedDate.year}";
+    }
+  },
+),
             const SizedBox(height: 22),
             SizedBox(
   width: double.infinity,
