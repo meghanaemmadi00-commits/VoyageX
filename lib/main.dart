@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/search_results_screen.dart';
 
 void main() {
   runApp(const VoyageXApp());
@@ -23,8 +24,7 @@ class VoyageXApp extends StatelessWidget {
   }
 }
 
-final TextEditingController dateController =
-    TextEditingController();
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -37,11 +37,14 @@ class _HomeScreenState extends State<HomeScreen> {
       TextEditingController();
 
   @override
-  Widget build(BuildContext context) {
-  backgroundColor: Colors.blue,
-  foregroundColor: Colors.white,
-  centerTitle: true,
-),
+Widget build(BuildContext context) {
+  return Scaffold(
+    appBar: AppBar(
+      title: const Text('VoyageX'),
+      backgroundColor: Colors.blue,
+      foregroundColor: Colors.white,
+      centerTitle: true,
+    ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),
         child: Column(
@@ -102,7 +105,14 @@ class _HomeScreenState extends State<HomeScreen> {
   width: double.infinity,
   height: 55,
   child: ElevatedButton.icon(
-    onPressed: () {},
+    onPressed: () {
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+      builder: (context) => const SearchResultsScreen(),
+    ),
+  );
+},
     icon: const Icon(Icons.search),
     label: const Text(
       'Search Trips',
