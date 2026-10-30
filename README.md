@@ -45,7 +45,7 @@ Meghana Emmadi
 ![Home Screen](screenshots/home_screen.png)
 
 ### 2. Search Results Screen
-![Search Results](screenshots/search_results_screen.png)
+![Search Results](screenshots/search_screen.png)
 
 ### 3. Booking Details Screen
 ![Booking Details](screenshots/booking_screen.png)
