@@ -37,3 +37,7 @@ Currently under development.
 ## Developer
 
 Meghana Emmadi
+## Application Screenshots
+
+### Booking Confirmation Screen
+![Booking Confirmation](screenshots/confirmation_screen.png)
