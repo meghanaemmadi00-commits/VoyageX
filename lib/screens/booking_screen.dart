@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'confirmation_screen.dart';
 
 class BookingScreen extends StatelessWidget {
   const BookingScreen({super.key});
@@ -61,7 +62,14 @@ class BookingScreen extends StatelessWidget {
               width: double.infinity,
               height: 52,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+      builder: (context) => const ConfirmationScreen(),
+    ),
+  );
+},
                 child: const Text('Confirm Booking'),
               ),
             ),
