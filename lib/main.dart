@@ -84,14 +84,27 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 22),
             SizedBox(
-              width: double.infinity,
-              height: 52,
-              child: ElevatedButton.icon(
-                onPressed: () {},
-                icon: const Icon(Icons.search),
-                label: const Text('Search Trips'),
-              ),
-            ),
+  width: double.infinity,
+  height: 55,
+  child: ElevatedButton.icon(
+    onPressed: () {},
+    icon: const Icon(Icons.search),
+    label: const Text(
+      'Search Trips',
+      style: TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
+    style: ElevatedButton.styleFrom(
+      backgroundColor: Colors.blue,
+      foregroundColor: Colors.white,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+      ),
+    ),
+  ),
+),
             const SizedBox(height: 30),
             const Text(
               'Popular Destinations',
