@@ -37,7 +37,18 @@ Currently under development.
 ## Developer
 
 Meghana Emmadi
-## Application Screenshots
 
-### Booking Confirmation Screen
-![Booking Confirmation](screenshots/confirmation_screen.png)
+
+## 📱 Application Screenshots
+
+### 1. Home Screen
+![Home Screen](screenshots/home_screen.png)
+
+### 2. Search Results Screen
+![Search Results](screenshots/search_results_screen.png)
+
+### 3. Booking Details Screen
+![Booking Details](screenshots/booking_screen.png)
+
+### 4. Ticket Confirmation Screen
+![Ticket Confirmation](screenshots/confirmation_screen.png)
